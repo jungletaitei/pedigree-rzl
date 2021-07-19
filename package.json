@@ -8,7 +8,7 @@
     "build": "razzle build --noninteractive",
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
-    "windows:prod": "npm run build && SET NODE_ENV=production PORT=3000 && node build/server.js",
+    "windows:prod": "npm run build && SET NODE_ENV=production && node build/server.js",
     "eb:prod": "npm run build && npm run start:prod"
   },
   "dependencies": {
